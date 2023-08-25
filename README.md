@@ -1,12 +1,6 @@
 # Para Formator
 
-<<<<<<< HEAD
 Para Formator is a versatile web application that facilitates various text editing tasks. This project is built using ReactJS, Tailwind CSS, and the Vite framework, combining modern technologies to provide users with a seamless text editing experience.
-=======
-![Preview](https://github.com/ABHISHEK-SIN-GH/Para-Formatter/assets/66122148/553b8fbd-e6c1-4ad3-b4ee-994907c2f149)
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
->>>>>>> 9e020e5821a6150e1fd5a2b3c003f98a3dd6ee91
 
 ![Preview](https://github.com/ABHISHEK-SIN-GH/Para-Formatter/assets/66122148/553b8fbd-e6c1-4ad3-b4ee-994907c2f149)
 
@@ -20,7 +14,7 @@ This template provides a minimal setup to get React working in Vite with HMR and
 
 ## Installation
 
-1. Clone this repository: `git clone https://github.com/your-username/para-formator.git`
+1. Clone this repository: `git clone https://github.com/ABHISHEK-SIN-GH/Para-Formatter.git`
 2. Navigate to the project directory: `cd para-formator`
 3. Install dependencies: `npm install`
 4. Start the development server: `npm run dev`

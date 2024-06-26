@@ -12,7 +12,7 @@ import Explore from './components/Explore/Explore'
 import Footer from './components/Base/Footer'
 
 function App() {
-  const baseTitle = "Para~Formator";
+  const baseTitle = "Para Formatter";
   return (
     <>
     <Router>

@@ -1,6 +1,8 @@
-# Para Formator
+# Para Formatter
 
-Para Formator is a versatile web application that facilitates various text editing tasks. This project is built using ReactJS, Tailwind CSS, and the Vite framework, combining modern technologies to provide users with a seamless text editing experience.
+## [Visit Website Here](https://para-formatter.vercel.app/)
+
+Para Formatter is a versatile web application that facilitates various text editing tasks. This project is built using ReactJS, Tailwind CSS, and the Vite framework, combining modern technologies to provide users with a seamless text editing experience.
 
 ![Preview](Preview.png)
 
@@ -15,7 +17,7 @@ Para Formator is a versatile web application that facilitates various text editi
 ## Installation
 
 1. Clone this repository: `git clone https://github.com/ABHISHEK-SIN-GH/Para-Formatter.git`
-2. Navigate to the project directory: `cd para-formator`
+2. Navigate to the project directory: `cd para-formatter`
 3. Install dependencies: `npm install`
 4. Start the development server: `npm run dev`
 
@@ -34,7 +36,7 @@ Para Formator is a versatile web application that facilitates various text editi
 
 ## Contributing
 
-Contributions are welcome! To contribute to Para Formator, follow these steps:
+Contributions are welcome! To contribute to Para Formatter, follow these steps:
 
 1. Fork this repository.
 2. Create a new branch: `git checkout -b feature/my-feature`

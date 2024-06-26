@@ -9,7 +9,7 @@ const Header = () => {
         <div className="flex h-16 items-center justify-between">
           <div className="md:flex md:items-center md:gap-12">
             <Link className="text-lg underline-offset-5 font-bold text-white" to="/">
-              Para ~ Formatter
+              Para Formatter
             </Link>
           </div>
 

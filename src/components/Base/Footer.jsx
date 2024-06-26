@@ -30,7 +30,7 @@ const Footer = () => {
       </div>
       <div className="mx-auto py-16 sm:px-6 lg:px-8 bg-blue-500 mt-16 px-2">
         <div className="flex justify-center text-white">
-          <h1 className="text-xl font-bold">Para ~ Formatter</h1>
+          <h1 className="text-xl font-bold">Para Formatter</h1>
         </div>
 
         <p className="mx-auto mt-6 max-w-md text-center leading-relaxed text-white">

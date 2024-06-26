@@ -1,6 +1,7 @@
 import React,{useState} from 'react';
 import TextForm from './TextForm';
 import UtilBtns from './UtilBtns';
+
 const Home = ({title}) => {
     document.title = title;
     const [wordCnt, setWordCnt] = useState(0);
@@ -75,9 +76,9 @@ const Home = ({title}) => {
         return ocrArr.length;
     }
     return (
-        <div className='mx-2'>
+        <div className='container mx-auto px-2'>
             <h1 className='text-2xl font-bold my-12'># To Format your content add some text in below text box : <span className={(charCnt>100?"text-red-500":"text-green-500")}>Words {wordCnt} and Characters {charCnt}</span></h1>
-            <div className='flex flex-row'>
+            <div className="grid grid-cols-1 gap-4">
                 <TextForm handleChange={handleChange} text={text}/>
                 <UtilBtns Text={text} fnLowercase={fnLowercase} fnUppercase={fnUppercase} fnCapitalize={fnCapitalize} fnClearText={fnClearText} fnCopyText={fnCopyText} fnRemoveSpace={fnRemoveSpace} fnOccurrenceAll={fnOccurrenceAll} fnReplace={fnReplace} fnReplaceAll={fnReplaceAll}/>
             </div>

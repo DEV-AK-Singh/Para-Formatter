@@ -1,24 +1,90 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
-    const isLoggedIn = false;
-    return (
-        <div class="flex flex-row bg-blue-500 m-2 rounded-2xl">
-            <div class="basis-3/12 p-4 text-2xl font-bold font-serif text-center text-cyan-50"><span>Para~Formator</span></div>
-            <div class="basis-7/12 py-5 flex flex-row list-none gap-8 font-semibold text-base">
-                <li className='hover:text-cyan-50'><Link to='/'>Home</Link></li>
-                <li className='hover:text-cyan-50'><Link to='/about'>About</Link></li>
-                <li className='hover:text-cyan-50'><Link to='/contact'>Contact</Link></li>
-                <li className='hover:text-cyan-50'><Link to='/explore'>Explore</Link></li>
+  const isLoggedIn = false;
+  return (
+    <header className="bg-blue-500 px-2">
+      <div className="mx-auto container">
+        <div className="flex h-16 items-center justify-between">
+          <div className="md:flex md:items-center md:gap-12">
+            <Link className="text-lg underline-offset-5 font-bold text-white" to="/">
+              Para ~ Formatter
+            </Link>
+          </div>
 
+          <div className="hidden md:block">
+            <nav aria-label="Global">
+              <ul className="flex items-center gap-6 text-sm text-white">
+                <li>
+                  <NavLink to="/" className={({isActive}) => (isActive)?"underline transition-all text-base underline-offset-5 font-bold":"transition-all"}>
+                    Home
+                  </NavLink>
+                </li>
+
+                <li>
+                  <NavLink to="/about" className={({isActive}) => (isActive)?"underline transition-all text-base underline-offset-5 font-bold":"transition-all"}>
+                    About
+                  </NavLink>
+                </li>
+
+                <li>
+                  <NavLink to="/contact" className={({isActive}) => (isActive)?"underline transition-all text-base underline-offset-5 font-bold":"transition-all"}>
+                    Contact
+                  </NavLink>
+                </li>
+
+                <li>
+                  <NavLink to="/explore" className={({isActive}) => (isActive)?"underline transition-all text-base underline-offset-5 font-bold":"transition-all"}>
+                    Explore
+                  </NavLink>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2">
+              <a
+                className="px-5 py-2 text-sm font-medium text-blue-500 shadow bg-white"
+                href="#"
+              >
+                Login
+              </a>
+
+              <div className="hidden sm:flex">
+                <a
+                  className="px-5 py-2 text-sm font-medium border-2 border-white text-white"
+                  href="#"
+                >
+                  Register
+                </a>
+              </div>
             </div>
-            <div class="basis-2/12 text-center p-4 flex flex-row list-none gap-4 font-semibold text-sm bg-cyan-50 border-4 border-blue-500 rounded-2xl">
-                {isLoggedIn ? <li className='hover:text-blue-500 grow p-1 rounded-full font-extrabold'>Welcome User!!</li> : 
-                <> <li className='hover:text-blue-500 grow p-1 rounded-full font-extrabold'>Login / SignUp</li></> }
+
+            <div className="block md:hidden">
+              <button className="rounded bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                </svg>
+              </button>
             </div>
+          </div>
         </div>
-    );
-}
+      </div>
+    </header>
+  );
+};
 
 export default Header;

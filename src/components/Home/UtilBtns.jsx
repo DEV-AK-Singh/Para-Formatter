@@ -9,31 +9,33 @@ const UtilBtns = ({Text,fnLowercase,fnUppercase,fnCapitalize,fnClearText,fnCopyT
     const [findOcr, setFindOcr] = useState('');
     const [ocrCnt, setOcrCnt] = useState(0);
     return (
-        <div className='basis-1/3 px-6'>
+        <div>
             <h1 className='text-lg font-bold mb-4'>Do Some Operations:</h1>
-            <div className='flex flex-row gap-2 mb-4'>
+            <div className='grid grid-cols-3 gap-2 mb-2'>
                 <Button name={"Lowercase"} func={fnLowercase}/>
                 <Button name={"Uppercase"} func={fnUppercase}/>
                 <Button name={"Capitalize"} func={fnCapitalize}/>
             </div>
-            <div className='flex flex-row gap-2 mb-4'>
+            <div className='grid grid-cols-3 gap-2 mb-2'>
                 <Button name={"Clear Text"} func={fnClearText}/>
-                <div className='has-tooltip basis-1/3'>
-                    <span className='tooltip rounded-xl shadow-lg bg-gray-100 text-black p-3 -mt-8 maz'><b>Copied: </b>{Text}</span>
-                    <Button name={"Copy Text"} func={fnCopyText}/>
+                <div className='has-tooltip w-full bg-blue-500 px-4 py-2 font-semibold text-white flex justify-center items-center'>
+                    <span className='tooltip shadow-lg bg-gray-100 text-black p-2 -mt-8 maz'><b>Copied: </b>{Text}</span>
+                    <button onClick={fnCopyText} className='w-full text-xs sm:text-sm'>Copy Text</button>    
                 </div>
                 <Button name={"Remove Space"} func={fnRemoveSpace}/>
             </div>
-            <div className='flex flex-row gap-2 mb-5'>
+            <div className='grid grid-cols-3 gap-2 mb-2'>
                 <Input name={"Find Occurrence"} setVal={setFindOcr} val={findOcr} disable={false}/>
                 <Input name={"OcrCnt"} setVal={setOcrCnt} val={ocrCnt} disable={true}/>
-                <Button name={"Count"} func={()=>{setOcrCnt(fnOccurrenceAll(findOcr))}}/>
+                <Button name={"Search"} func={()=>{setOcrCnt(fnOccurrenceAll(findOcr))}}/>
             </div>
-            <div className='flex flex-row gap-2'>
+            <div className='grid grid-cols-3 gap-2'>
                 <Input name={"Find"} setVal={setFind} val={find} disable={false}/>
                 <Input name={"Replace"} setVal={setReplace} val={replace} disable={false}/>
-                <Button name={"Change"} func={()=>{fnReplace(find,replace)}}/>
-                <Button name={"All"} func={()=>{fnReplaceAll(find,replace)}}/>
+                <div className='grid grid-cols-2 gap-2'>
+                    <Button name={"Change"} func={()=>{fnReplace(find,replace)}}/>
+                    <Button name={"All"} func={()=>{fnReplaceAll(find,replace)}}/>
+                </div>
             </div>
         </div>
     );

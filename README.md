@@ -2,7 +2,7 @@
 
 Para Formator is a versatile web application that facilitates various text editing tasks. This project is built using ReactJS, Tailwind CSS, and the Vite framework, combining modern technologies to provide users with a seamless text editing experience.
 
-![Preview](https://github.com/ABHISHEK-SIN-GH/Para-Formatter/assets/66122148/553b8fbd-e6c1-4ad3-b4ee-994907c2f149)
+![Preview](Preview.png)
 
 ## Features
 

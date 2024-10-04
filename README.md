@@ -4,8 +4,6 @@
 
 Para Formatter is a versatile web application that facilitates various text editing tasks. This project is built using ReactJS, Tailwind CSS, and the Vite framework, combining modern technologies to provide users with a seamless text editing experience.
 
-![Preview](Preview.png)
-
 ## Features
 
 - **Text Transformation:** Easily convert text to lowercase, uppercase, or capitalize it according to your needs.
@@ -13,6 +11,10 @@ Para Formatter is a versatile web application that facilitates various text edit
 - **Word Replacement:** Replace specific words within the text effortlessly, aiding in proofreading and editing.
 - **Word and Character Count:** Instantly obtain word and character counts for precise content analysis.
 - **Word Search:** Quickly locate specific words within the text to enhance readability and comprehension.
+
+## Previews
+
+![Preview](Preview.png)
 
 ## Installation
 

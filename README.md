@@ -2,7 +2,8 @@
 
 ## [Visit Website Here..](https://para-formatter.vercel.app/)
 
-Para Formatter is a versatile web application that facilitates various text editing tasks. This project is built using ReactJS, Tailwind CSS, and the Vite framework, combining modern technologies to provide users with a seamless text editing experience.
+## Project Overview
+- Para Formatter is a versatile web application that facilitates various text editing tasks. This project is built using ReactJS, Tailwind CSS, and the Vite framework, combining modern technologies to provide users with a seamless text editing experience.
 
 ## Features
 
